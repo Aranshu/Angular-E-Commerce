@@ -1,0 +1,36 @@
+<section class="d-md-none d-block text-center">
+    <article class="d-flex overflow-auto example mb-3">
+        <li class="d-flex flex-column me-2" *ngFor ="let categoryLink of categoryLinks" >
+            <img class="round-image align-self-center" src= {{categoryLink.image}} width="68" height="68" alt={{categoryLink.title}}>
+            <small> {{categoryLink.title}} </small>
+        </li>
+    </article>
+</section>
+
+<section id="carouselExampleSlidesOnly" class="carousel slide mb-4" data-bs-ride="carousel">
+    <article class="carousel-inner">
+        <div class="carousel-item" *ngFor ="let carouselImage of carouselImages; let firstCarousel = first;" [class.active]="firstCarousel">
+            <img src={{carouselImage.desktopImage}} class="d-none d-md-block w-100" alt="desktopImage">
+            <img src={{carouselImage.mobileImage}} class="d-md-none d-block w-100" alt="mobileImage">
+        </div>
+    </article>
+</section>
+
+<section class="row row-cols-1 row-cols-md-2 g-4">
+    <article class="col" *ngFor ="let categoryImage of categoryImages">
+        <div class="card text-white border-0">
+            <img class="card-img" src="{{categoryImage.image}}" alt="{{categoryImage.title}}">
+            <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
+                <h2 class="card-title rgba-black-light text-center test m-0 p-3">{{categoryImage.title}}</h2>
+            </div>
+        </div>
+    </article>
+</section>
+
+<section id="carouselExampleSlidesOnly" class="carousel slide mb-4" data-bs-ride="carousel">
+    <article class="carousel-inner">
+        <div class="carousel-item overflow-auto" *ngFor ="let carouselImage of carouselImages; let firstCarousel = first;" [class.active]="firstCarousel">
+            <img src={{carouselImage.mobileImage}} class="d-md-none d-block w-100" alt="mobileImage">
+        </div>
+    </article>
+</section>

@@ -1,0 +1,50 @@
+{
+    "CategoryLinks":[
+        {
+            "id": 1,
+            "image": "https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/category/New-Arrivals.png",
+            "title": "bad"
+        },
+        {
+            "id": 2,
+            "image": "https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/category/New-Arrivals.png",
+            "title": "test"
+        },
+        {
+            "id": 3,
+            "image": "https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/category/New-Arrivals.png",
+            "title": "aranshu"
+        }
+    ],
+
+    "CarouselImages":[
+        {
+            "id": 1,
+            "desktopImage": "https://ik.imagekit.io/thestylist/tt/pub/media_tt/HOMEPAGE_IMAGES/04_Jan_22/EOSS_BANNER_-_Desktop_(1).jpg",
+            "mobileImage": "https://ik.imagekit.io/thestylist/tt/pub/media_tt/HOMEPAGE_IMAGES/27_Sep_21/eternal-mob.jpg"
+        },
+        {
+            "id": 2,
+            "desktopImage": "https://ik.imagekit.io/thestylist/tt/pub/media_tt/HOMEPAGE_IMAGES/04_Jan_22/EOSS_BANNER_-_Desktop_(1).jpg",
+            "mobileImage": "https://ik.imagekit.io/thestylist/tt/pub/media_tt/HOMEPAGE_IMAGES/27_Sep_21/eternal-mob.jpg"
+        }
+    ],
+
+    "CategoryImages":[
+        {
+            "id": 1,
+            "image": "https://admin-tt.perniapopup.studio/media_tt/HOMEPAGE_IMAGES/20_Dec_21/Anarkali_final.jpg",
+            "title": "bad"
+        },
+        {
+            "id": 2,
+            "image": "https://admin-tt.perniapopup.studio/media_tt/HOMEPAGE_IMAGES/20_Dec_21/Anarkali_final.jpg",
+            "title": "bad"
+        },
+        {
+            "id": 3,
+            "image": "https://admin-tt.perniapopup.studio/media_tt/HOMEPAGE_IMAGES/20_Dec_21/Anarkali_final.jpg",
+            "title": "bad"
+        }
+    ]
+}

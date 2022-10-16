@@ -1,0 +1,221 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+</nav>
+<div class="fixed-bottom">
+
+</div>
+  <nav class="navbar bg-white fixed-bottom m-0 p-0 ">
+        <a class="navbar-toggler w-50 border-0 pt-2 pb-2 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <img src="https://www.taruntahiliani.com/assets/icons/sort.svg">
+            <small class="overflow-hidden">Price: High to low</small>
+        </a>
+        <a class="navbar-toggler w-50 pt-2 pb-2  p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <img src="https://www.taruntahiliani.com/assets/icons/filter.svg">
+            <small>Filters</small>
+        </a>
+      <div class="offcanvas offcanvas-bottom w-100 h-100 border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+    </div>
+  </nav>
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h6 class=" m-0">SHOWING ALL 4 RESULTS</h6>
+    <div class="d-flex align-items-center">
+        <label class="h6 m-0 d-none" style=" min-width: 80px;" >Sort By :</label>
+        <select class="form-select me-2 d-none" style=" min-height: 44px;" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" (click)="test();" class="btn border border-dark">
+                <img src="./assets/icons/filter-bar/grid big.svg" />
+            </button>
+            <button type="button" (click)="test();" class="btn border border-dark">
+                <img src="./assets/icons/filter-bar/grid small.svg" />
+            </button>
+        </div>
+    </div>
+    
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+            <input type="text" style=" min-height: 44px;" class="form-control rounded-pill mb-4" placeholder="First name" aria-label="First name">
+    </div>   
+    <div class="col-md-9">
+        <section [ngClass]=" isSelected ? 'row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2' : 'row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-2' ">
+            <div class="col">
+                <div class="card border-0 h-100">
+                    <img src="https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/product/f/a/FA-AWU-MLT-SK-1-CW-121_1.jpg/tr:w-395,h-600"
+                        class="card-img-top" alt="...">
+                    <div class="card-img-overlay p-0">
+                        <button type="button" class="btn btn-link float-end p-0 ">
+                            <img src="./assets/icons/header/wishlist.svg" alt="Wishlist" />
+                        </button>
+                    </div>
+                    <div class="card-body p-0">
+                        <h6 class="card-title">ahchadb qhfdqihfblu</h6>
+                        <small class="card-text">MRP 20000</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 h-100">
+                    <img src="https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/product/f/a/FA-AWU-MLT-SK-1-CW-121_1.jpg/tr:w-395,h-600"
+                        class="card-img-top" alt="...">
+                    <div class="card-img-overlay p-0">
+                        <button type="button" class="btn btn-link float-end p-0 ">
+                            <img src="./assets/icons/header/wishlist.svg" alt="Wishlist" />
+                        </button>
+                    </div>
+                    <div class="card-body p-0">
+                        <h6 class="card-title">ahchadb qhfdqihfblu</h6>
+                        <small class="card-text">MRP 20000</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 h-100">
+                    <img src="https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/product/f/a/FA-AWU-MLT-SK-1-CW-121_1.jpg/tr:w-395,h-600"
+                        class="card-img-top" alt="...">
+                    <div class="card-img-overlay p-0">
+                        <button type="button" class="btn btn-link float-end p-0 ">
+                            <img src="./assets/icons/header/wishlist.svg" alt="Wishlist" />
+                        </button>
+                    </div>
+                    <div class="card-body p-0">
+                        <h6 class="card-title">ahchadb qhfdqihfblu</h6>
+                        <small class="card-text">MRP 20000</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 h-100">
+                    <img src="https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/product/f/a/FA-AWU-MLT-SK-1-CW-121_1.jpg/tr:w-395,h-600"
+                        class="card-img-top" alt="...">
+                    <div class="card-img-overlay p-0">
+                        <button type="button" class="btn btn-link float-end p-0 ">
+                            <img src="./assets/icons/header/wishlist.svg" alt="Wishlist" />
+                        </button>
+                    </div>
+                    <div class="card-body p-0">
+                        <h6 class="card-title">ahchadb qhfdqihfblu</h6>
+                        <small class="card-text">MRP 20000</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 h-100">
+                    <img src="https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/product/f/a/FA-AWU-MLT-SK-1-CW-121_1.jpg/tr:w-395,h-600"
+                        class="card-img-top" alt="...">
+                    <div class="card-img-overlay p-0">
+                        <button type="button" class="btn btn-link float-end p-0 ">
+                            <img src="./assets/icons/header/wishlist.svg" alt="Wishlist" />
+                        </button>
+                    </div>
+                    <div class="card-body p-0">
+                        <h6 class="card-title">ahchadb qhfdqihfblu</h6>
+                        <small class="card-text">MRP 20000</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 h-100">
+                    <img src="https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/product/f/a/FA-AWU-MLT-SK-1-CW-121_1.jpg/tr:w-395,h-600"
+                        class="card-img-top" alt="...">
+                    <div class="card-img-overlay p-0">
+                        <button type="button" class="btn btn-link float-end p-0 ">
+                            <img src="./assets/icons/header/wishlist.svg" alt="Wishlist" />
+                        </button>
+                    </div>
+                    <div class="card-body p-0">
+                        <h6 class="card-title">ahchadb qhfdqihfblu</h6>
+                        <small class="card-text">MRP 20000</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 h-100">
+                    <img src="https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/product/f/a/FA-AWU-MLT-SK-1-CW-121_1.jpg/tr:w-395,h-600"
+                        class="card-img-top" alt="...">
+                    <div class="card-img-overlay p-0">
+                        <button type="button" class="btn btn-link float-end p-0 ">
+                            <img src="./assets/icons/header/wishlist.svg" alt="Wishlist" />
+                        </button>
+                    </div>
+                    <div class="card-body p-0">
+                        <h6 class="card-title">ahchadb qhfdqihfblu</h6>
+                        <small class="card-text">MRP 20000</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 h-100">
+                    <img src="https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/product/f/a/FA-AWU-MLT-SK-1-CW-121_1.jpg/tr:w-395,h-600"
+                        class="card-img-top" alt="...">
+                    <div class="card-img-overlay p-0">
+                        <button type="button" class="btn btn-link float-end p-0 ">
+                            <img src="./assets/icons/header/wishlist.svg" alt="Wishlist" />
+                        </button>
+                    </div>
+                    <div class="card-body p-0">
+                        <h6 class="card-title">ahchadb qhfdqihfblu</h6>
+                        <small class="card-text">MRP 20000</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 h-100">
+                    <img src="https://ik.imagekit.io/thestylist/tt/pub/media_tt/catalog/product/f/a/FA-AWU-MLT-SK-1-CW-121_1.jpg/tr:w-395,h-600"
+                        class="card-img-top" alt="...">
+                    <div class="card-img-overlay p-0">
+                        <button type="button" class="btn btn-link float-end p-0 ">
+                            <img src="./assets/icons/header/wishlist.svg" alt="Wishlist" />
+                        </button>
+                    </div>
+                    <div class="card-body p-0">
+                        <h6 class="card-title">ahchadb qhfdqihfblu</h6>
+                        <small class="card-text">MRP 20000</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</div>
